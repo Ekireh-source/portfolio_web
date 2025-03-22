@@ -1,35 +1,19 @@
-import Image from "next/image";
-import React from "react";
+import SkillCard from "./skill-card"
 
-interface MyComponentProps {
-  items: Array<{ alt?: string; img?: string; name?: string; icon?: string }>;
+interface SkillsFooterProps {
+  items: Array<{
+    name: string
+    icon: string
+  }>
 }
 
-const SkillsFooter: React.FC<MyComponentProps> = ({ items }) => {
+export default function SkillsFooter({ items }: SkillsFooterProps) {
   return (
     <>
-      {items &&
-        items.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center gap-2 p-4 rounded-lg hover:bg-accent transition-colors"
-          >
-            {item.icon && (
-              <Image
-                src={item.icon}
-                alt={item.alt || item.name || "Icon"}
-                width={48} // Equivalent to w-12 (12 * 4px = 48px)
-                height={48} // Equivalent to h-12
-                className="object-contain"
-              />
-            )}
-            <span className="text-sm text-center font-medium text-muted-foreground">
-              {item.name}
-            </span>
-          </div>
-        ))}
+      {items.map((item, index) => (
+        <SkillCard key={index} name={item.name} icon={item.icon} />
+      ))}
     </>
-  );
-};
+  )
+}
 
-export default SkillsFooter;
