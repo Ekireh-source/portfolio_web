@@ -8,7 +8,7 @@ import { useRef, useState } from "react"
 
 interface SkillCardProps {
   name: string
-  icon: git add
+  icon: string
 }
 
 export default function SkillCard({ name, icon }: SkillCardProps) {
