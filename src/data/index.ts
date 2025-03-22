@@ -73,10 +73,11 @@ export const projects = [
   {
     id: 1,
     title: "BlockChain Based File Repository",
-    des: "Be able to store files without a worry of them getting tempered with while also makin sure your work is original",
+    des: "Be able to store files without a worry of them getting tempered with while also making sure your work is original",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/Ekireh-source/sunrepo",
+    demo: null, // Added this to match the component's expectations
   },
   {
     id: 2,
@@ -85,14 +86,16 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/Ekireh-source/metering",
+    demo: null,
   },
   {
     id: 3,
     title: "Chain Certs- Generate certifictes",
-    des: "Be able to generate certificates for your company store them on the blockchain to ensure immutablity and future verification",
+    des: "Be able to generate certificates for your company store them on the blockchain to ensure immutability and future verification",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://github.com/Ekireh-source/certs",
+    demo: null,
   },
   {
     id: 4,
@@ -101,8 +104,10 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/Ekireh-source",
+    demo: null,
   },
-];
+]
+
 
 
 
